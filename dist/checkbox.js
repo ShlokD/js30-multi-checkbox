@@ -1,0 +1,1 @@
+"use strict";var lastChecked=void 0,onCheckboxChange=function(e){if(e.target.checked){var c=!1;e.shiftKey&&checkboxes.forEach(function(t){t!==lastChecked&&t!==e.target||(c=!c),c&&(t.checked=!0)}),lastChecked=e.target}},checkboxes=document.querySelectorAll("input[type=checkbox]");checkboxes.forEach(function(e){return e.addEventListener("click",onCheckboxChange)});
